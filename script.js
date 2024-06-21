@@ -9,6 +9,8 @@ form.method = 'POST';
 form.action = url;
 form.style.visibility = 'hidden'; 
 for (key in Object.keys(payload)) {
+    console.log(key)
+    console.log(payload)
     var input = document.createElement('input');
     input.name = key;
     input.value = payload[key];
