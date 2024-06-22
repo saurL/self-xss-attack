@@ -6,7 +6,7 @@ let payload={
 
     // Define the data you want to send in the POST request
     const data = {
-      key1: ${nullOpener},
+      key1: '${nullOpener}',
     };
     
     // Use the fetch API to send the POST request
