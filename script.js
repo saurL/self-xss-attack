@@ -28,7 +28,7 @@ let payload={
     })
     .catch(error => {
       console.error('There was a problem with the fetch operation:', error); // Handle any errors
-    });)</script>`,
+    });</script>`,
     secret: "aa",
 }
 const form = document.createElement('form');
